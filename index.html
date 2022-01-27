@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Informa CEP</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="brand">
+          <img src="./images/informacep-logo.svg" alt="Logo Informa CEP" />
+        </div>
+
+        <div class="title">
+          <h3>Informe o CEP para realizar a pesquisa</h3>
+        </div>
+
+        <div class="search">
+          <input
+            type="text"
+            name="zipcodeSearch"
+            id="zipcodeSearch"
+            placeholder="Número do CEP"
+          />
+
+          <button onclick="zipcodeSearch()" id="btnSearch">Buscar CEP</button>
+        </div>
+
+        <div class="resultSearch">
+          <p id="zipcodeText">
+            CEP:
+            <span id="zipcodeResult"></span>
+          </p>
+          <p id="streetText">
+            Logradouro:
+            <span id="streetResult"></span>
+          </p>
+          <p id="neighborhoodText">
+            Bairro:
+            <span id="neighborhoodResult"></span>
+          </p>
+          <p id="cityText">
+            Cidade:
+            <span id="cityResult"></span>
+          </p>
+          <p id="stateText">
+            UF:
+            <span id="stateResult"></span>
+          </p>
+        </div>
+      </div>
+      <footer>
+        Desenvolvido por KTORZDEV | Todos os direitos reservados - 2022
+      </footer>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>

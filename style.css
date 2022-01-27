@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+:root {
+  --bg: #1d3557;
+  --inputColor: #3969ac;
+  --buttonBg: #799ed2;
+  --dark: #2e3338;
+  --light: #f8f9fa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+  background-color: var(--bg);
+  color: var(--light);
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.container {
+  max-width: 940px;
+}
+
+.container .brand {
+  margin-bottom: 3rem;
+}
+
+.container .title h3 {
+  font-family: 'Jura', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.container .search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .search input[type='text'] {
+  width: 15rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: var(--inputColor);
+  color: var(--light);
+  margin-bottom: 1.5rem;
+  outline: none;
+}
+
+.container .search button {
+  width: 21.25rem;
+  height: 4rem;
+  background-color: var(--buttonBg);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--dark);
+  transition: 0.2s;
+  margin-bottom: 2rem;
+}
+
+.container .search button:hover {
+  filter: brightness(0.9);
+  transition: 0.2s;
+}
+
+.container .resultSearch {
+  width: 38.75rem;
+  height: 15.5rem;
+  background-color: var(--inputColor);
+  border-radius: 0.5rem;
+  border: none;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.container .resultSearch p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--light);
+}
+
+.container .resultSearch p span {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 300;
+  text-align: center;
+  color: var(--light);
+}
+
+footer {
+  font-family: 'Jura', sans-serif;
+  display: grid;
+  align-items: flex-end;
+}
