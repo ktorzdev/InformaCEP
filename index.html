@@ -1,63 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Informa CEP</title>
 
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <main>
-      <div class="container">
-        <div class="brand">
-          <img src="./images/informacep-logo.svg" alt="Logo Informa CEP" />
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Busca CEP</title>
 
-        <div class="title">
-          <h3>Informe o CEP para realizar a pesquisa</h3>
-        </div>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap" rel="stylesheet">
 
-        <div class="search">
-          <input
-            type="text"
-            name="zipcodeSearch"
-            id="zipcodeSearch"
-            placeholder="Número do CEP"
-          />
+  <link rel="stylesheet" href="style2.css">
+</head>
 
-          <button onclick="zipcodeSearch()" id="btnSearch">Buscar CEP</button>
-        </div>
+<body>
 
-        <div class="resultSearch">
-          <p id="zipcodeText">
-            CEP:
-            <span id="zipcodeResult"></span>
-          </p>
-          <p id="streetText">
-            Logradouro:
-            <span id="streetResult"></span>
-          </p>
-          <p id="neighborhoodText">
-            Bairro:
-            <span id="neighborhoodResult"></span>
-          </p>
-          <p id="cityText">
-            Cidade:
-            <span id="cityResult"></span>
-          </p>
-          <p id="stateText">
-            UF:
-            <span id="stateResult"></span>
-          </p>
-        </div>
-      </div>
-      <footer>
-        Desenvolvido por KTORZDEV | Todos os direitos reservados - 2022
-      </footer>
-    </main>
+  <main>
+    <header>
+      <h1>Busca CEP</h1>
+    </header>
+  
+    <div class="container">
+      <section class="inputSearch">
+        <input type="text" name="zipcodeSearch" id="zipcodeSearch" placeholder="Informe o nº do CEP">
+        <button type="submit" id="btnSearch" onclick="zipcodeSearch()">Pesquisar CEP</button>
+      </section>
+    
+      <section class="resultSearch">
+      </section>
+    </div>
+  
+    <footer>
+      Desenvolvido por KTORZDEV | Todos os direitos reservados - 2023
+    </footer>
+  </main>
+  <script src="main2.js"></script>
+</body>
 
-    <script src="main.js"></script>
-  </body>
 </html>

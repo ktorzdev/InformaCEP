@@ -1,4 +1,5 @@
 function zipcodeSearch() {
+  let result = document.querySelector('.resultSearch')
   let zipcode = document.getElementById('zipcodeSearch').value
   if (zipcode === '') {
     alert('Não foi informado nenhum CEP para pesquisa.')
@@ -13,11 +14,23 @@ function zipcodeSearch() {
         if (data.cep === undefined) {
           alert('O CEP informado não existe ou é inválido.')
         } else {
-          zipcodeResult.innerHTML = data.cep
-          streetResult.innerHTML = data.street
-          neighborhoodResult.innerHTML = data.neighborhood
-          cityResult.innerHTML = data.city
-          stateResult.innerHTML = data.state
+          result.innerHTML = `
+            <p id="zipcodeText">
+              CEP: <span id="zipcodeResult">${data.cep}</span>
+            </p>
+            <p id="streetText">
+              Logradouro: <span id="streetResult">${data.street}</span>
+            </p>
+            <p id="neighborhoodText">
+              Bairro: <span id="neighborhoodResult">${data.neighborhood}</span>
+            </p>
+            <p id="cityText">
+              Cidade: <span id="cityResult">${data.city}</span>
+            </p>
+            <p id="stateText">
+              UF: <span id="stateResult">${data.state}</span>
+            </p>
+          `
         }
         btnSearch.textContent = 'Buscar CEP'
       })
